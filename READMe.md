@@ -1,6 +1,8 @@
 # Overview
 Determine if a token is part of a person's name using logistic regression with Stochastic Gradient Descent. <br/>
+
 Data used: CoNLL 2003 Shared Task on Named Entity Recognition (Tjong Kim Sang and De Meulder, 2003) <br/>
+
 Results: F1 score - 91.2%
 
 #
