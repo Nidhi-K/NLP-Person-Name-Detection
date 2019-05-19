@@ -1,5 +1,10 @@
 # Overview
-Determine if a token is part of a person's name using logistic regression with Stochastic Gradient Descent. Data used: CoNLL 2003 Shared Task on Named Entity Recognition (Tjong Kim Sang and De Meulder, 2003)
+Determine if a token is part of a person's name using logistic regression with Stochastic Gradient Descent. <br/>
+Data used: CoNLL 2003 Shared Task on Named Entity Recognition (Tjong Kim Sang and De Meulder, 2003) <br/>
+Results: F1 score - 91.2%
+
+#
+To run, ```python classifier_main.py --model CLASSIFIER```
 
 # Features Extracted
 1. **Length:** Bucketized the lengths of the words into less than 5, between 6 and 10 inclusive, and so on. The individual lengths of the words are also included as separate features, as this increases the accuracy.
@@ -11,8 +16,4 @@ Determine if a token is part of a person's name using logistic regression with S
 7. **Prev and Next:** This is useful for getting context for the words, so we consider previous word, next word, previous and next word, and the same thing for patterns.
 8. **New Word:** This feature is used for the test set. If a word has not been seen in the training set then when it is encountered in the test set this feature is true.
 
-# Results
-F1 score - 91.2%
 
-#
-To run, ```python classifier_main.py --model CLASSIFIER```
